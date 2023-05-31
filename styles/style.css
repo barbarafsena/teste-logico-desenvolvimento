@@ -1,0 +1,60 @@
+:root {
+    --cor-de-fundo: #5c429c;
+    --fonte-principal: "Inter";
+    --texto: #f1f1f1;
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.img_principal {
+    padding: 10rem;
+}
+
+.teste-candidata {
+    text-align: center;
+    font-style: italic;
+}
+
+.container_secoes {
+    background-color: var(--cor-de-fundo);
+    margin: 5px 0;
+    padding: 30px;
+}
+
+.titulo-secao {
+    color: var(--texto);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    margin-top: 5px;
+}
+
+.btn {
+    margin: 10px 0;
+}
+
+
+.alert {
+    margin: 10px 0;
+    /* display: none; */
+}
+
+@media screen and (min-width:1400px) {
+
+    .carousel-inner,
+    .carousel-item {
+        height: 600px;
+    }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Teste Sólides</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="justify-content-center collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chatbot.html">Chatbot</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container_header">
+        <img src="./img/solides_icon.png" class="img-fluid img_principal mx-auto d-block" alt="Logo da empresa Sólides">
+        <p class="teste-candidata"> Teste por Bárbara Fernandes Sena</p>
+    </header>
+
+
+
+    <section class="container_secoes">
+
+        <!-- Seção Teste Lógico -->
+
+        <h1 class="titulo-secao"> Teste Lógico</h1>
+
+        <div class="container">
+            <div class="row row-cols-2 column-gap-3 row-gap-3 justify-content-center">
+
+                <!-- Imprime numeros de 1 a 10 em ordem crescente -->
+                <div class="card col" style="width: 18rem;">
+                    <img src="./img/lista-numeros.png" class="card-img-top" alt="Lista de números">
+                    <div class="card-body">
+                        <p class="card-text">a) Escreva um programa que imprima 10 números de 1 a 10 em ordem crescente
+                        </p>
+                        <input type="button" id="botao" value="Gerar" class="btn btn-success"
+                            onclick="numOrdemCrescente()"></input>
+
+                        <div class="alert alert-primary" id="resultadoNumDecresc" role="alert"></div>
+                    </div>
+                </div>
+
+                <!-- Recebe uma lista de números e retorne a média aritmética -->
+
+                <div class="card col" style="width: 18rem;">
+                    <img src="./img/media.jpg" class="card-img-top" alt="Média aritmética">
+                    <div class="card-body">
+                        <p class="card-text">b) Escreva uma função que receba uma lista de números e retorne a média
+                            aritmética desses
+                            números.</p>
+                        <label for="inputPassword5" class="form-label">Insira a lista de números:</label>
+                        <input type="text" id="listaNumeros" class="form-control" aria-labelledby="passwordHelpBlock">
+                        <div id="passwordHelpBlock" class="form-text">
+                            Escreva sua lista de números separadas por vírgula. Ex.: "12, 14, 56"
+                        </div>
+                        <input type="button" value="Gerar" class="btn btn-success" onclick="listaNumeros()"></input>
+                        <div class="alert alert-primary" id="respLista" role="alert"></div>
+                    </div>
+                </div>
+
+                <!-- Verifica se é palíndromo -->
+
+                <div class="card col" style="width: 18rem;">
+                    <img src="./img/palindromos.png" class="card-img-top" alt="Imagem palíndromos">
+                    <div class="card-body">
+                        <p class="card-text">c) Implemente um algoritmo para verificar se uma palavra é um palíndromo
+                            (ou seja,
+                            se ela é igual
+                            quando lida de trás para frente)</p>
+                        <label for="inputPassword5" class="form-label">Escreva uma palavra qualquer</label>
+                        <input type="text" id="palavraQualquer" class="form-control">
+                        <input type="button" value="Verificar" class="btn btn-success" onclick="palindromo()"></input>
+                        <div class="alert alert-primary" id="respPalindromo" role="alert"></div>
+                    </div>
+                </div>
+
+                <!-- Sequência de Fibonnaci -->
+
+                <div class="card col" style="width: 18rem;">
+                    <img src="./img/fibonacci.jpg" class="card-img-top" alt="Imagem sequencia de Fibonacci">
+                    <div class="card-body">
+                        <p class="card-text">d) Escreva um programa que gere a sequência de Fibonacci até o décimo
+                            termo.</p>
+                        <input type="button" value="Gerar sequência" class="btn btn-success"
+                            onclick="SequenciaFibonnaci()"></input>
+                        <div class="alert alert-primary" id="respFibonacci" role="alert"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container_secoes">
+
+        <h1 class="titulo-secao"> Teste de Desenvolvimento </h1>
+
+        <div class="container ">
+            <div class="row row-cols-2 column-gap-3 row-gap-3 justify-content-center">
+
+                <!-- Conta número de palavras  -->
+
+                <div class="card col-2" style="width: 18rem;">
+                    <img src="./img/contar.jpg" class="card-img-top" alt="Imagem de mão contando">
+                    <div class="card-body">
+                        <p class="card-text">a) Escreva um script ou código que leia uma frase do usuário e
+                            conte o número de palavras nessa frase.
+                        </p>
+                        <label for="inputPassword5" class="form-label">Escreva qualquer texto, frase ou letra:
+                        </label>
+                        <input type="textarea" id="texto" class="form-control">
+                        <input type="button" value="Gerar" class="btn btn-success"
+                            onclick="ContadorDeCaracteres()"></input>
+
+                        <div class="alert alert-primary" id="respContadorPalavras" role="alert"></div>
+                    </div>
+                </div>
+
+                <!-- Inverte string  -->
+
+
+                <div class="card col-2" style="width: 18rem;">
+                    <img src="./img/inverse.jpg" class="card-img-top" alt="Imagem escrito 'inverse'">
+                    <div class="card-body">
+                        <p class="card-text">b) Crie uma função ou método que receba uma string como entrada e
+                            retorne essa string
+                            invertida
+                        </p>
+                        <label for="inputPassword5" class="form-label">Digite uma palavra: </label>
+                        <input type="text" id="textoNormal" class="form-control">
+                        <input type="button" value="Inverter texto" class="btn btn-success"
+                            onclick="InversorDeCaracteres()"></input>
+
+                        <div class="alert alert-primary" id="respTextoInvertido" role="alert"></div>
+                    </div>
+                </div>
+
+                <!-- Simulação de chatbot  -->
+
+                <div class="card col-2" style="width: 18rem;">
+                    <img src="./img/chatbot.jpg" class="card-img-top" alt="Chatbot">
+                    <div class="card-body">
+                        <p class="card-text">c) Implemente um programa ou função que simule um chatbot simples,
+                            onde o usuário pode fazer perguntas sobre um determinado tema (por exemplo, filmes,
+                            esportes, etc.) e o chatbot deve ser capaz de fornecer respostas relevantes.
+                        </p>
+
+                        <div class="alert alert-primary text-center" role="alert">
+                            <a href="chatbot.html" style="text-decoration: none; color: navy;">Ver chatbot</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recebe lista e retorna somente números pares  -->
+
+                <div class="card col-2" style="width: 18rem;">
+                    <img src="./img/lista-numeros.png" class="card-img-top" alt="Lista de números">
+                    <div class="card-body">
+                        <p class="card-text">d) Desenvolva uma função ou método que receba uma lista de números
+                            e retorne uma nova lista contendo apenas os números pares da lista original
+                        </p>
+                        <label for="inputPassword5" class="form-label">Insira a lista de números:</label>
+                        <input type="text" id="listaNumeroUsuario" class="form-control">
+                        <div id="passwordHelpBlock" class="form-text">
+                            Escreva sua lista de números separadas por vírgula. Ex.: "12, 14, 56"
+                        </div>
+                        <input type="button" value="Ver apenas número pares" class="btn btn-success"
+                            onclick="listaNumerosPares()"></input>
+
+                        <div class="alert alert-primary" id="respNumerosPares" role="alert"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+
+</html>
